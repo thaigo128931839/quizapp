@@ -70,3 +70,139 @@ header{
     height: 12px;
     border-radius: 999px;
 }
+
+main {
+    padding: 32px 24px ;
+}
+
+.boas_vindas{
+    margin-bottom: 40px;
+}
+.boas_vindas h1{
+    font-size: 40px;
+    font-weight: 300;
+    color: var(--primary-text-color);
+}
+
+.boas_vindas h1 strong{
+    font-weight: 500;
+}
+
+.boas_vindas p{
+    color: var(--secundary-text-color);
+    font-size: 14px;
+    line-height: 150%;
+    font-style: italic;
+}
+
+.assuntos{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.assuntos button{
+ border: none;
+ background: var(--bg-color);
+ display: flex;
+ align-items: center;
+ gap: 16px;
+ padding: 12px;
+ border-radius: 12px;
+ box-shadow: var(--shadow);
+ font-size: 18px;
+ font-weight: 500;
+ color: var(--primary-text-color);
+}
+
+.assuntos button div{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.assuntos button img{
+    width: 100%;
+}
+
+.botao_html div{
+    background: var(--bg-html)
+}
+
+.botao_css div{
+    background: var(--bg-css);
+}
+
+.botao_javascript div{
+    background: var(--bg-javascript);
+}
+
+.botao_acecibilidade div{
+    background: var(--bg-acecibilidade);
+}
+
+@media(min-width: 1100px){
+    body{
+        background: var(--bg-desktop) var(--bg-color);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    header{
+        margin-block: 81px;
+    }
+
+    .tema{
+       gap: 16px; 
+    }
+
+    .tema img{
+        width: 24px;
+    }
+
+    .tema button{
+        width: 48px;
+        height: 28px;
+    }
+
+    .tema button div{
+        width: 20px;
+        height: 20px;
+    }
+
+    main{
+        display: flex;
+        max-width: 1160px;
+        margin-inline: auto;
+    }
+
+    section{
+        width: 100%;
+    }
+
+    .boas_vindas h1{
+        font-size: 64px;
+        margin-bottom: 48px;
+    }
+
+    .boaa_vindas p{
+        font-size: 28px;
+    }
+
+    .assuntos{
+        gap: 24px;
+    }
+
+    .assuntos button{
+        font-size: 28px;
+        padding: 20px;
+        gap: 32px;
+    }
+
+    .assuntos button div{
+        width: 56px;
+        height: 56px;
+        padding: 8px;
+    }
+}
